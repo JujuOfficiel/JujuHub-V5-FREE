@@ -1,0 +1,198 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "⭐️Juju Hub V5⭐️",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Juju Hub is loading...",
+   LoadingSubtitle = "FREE Version",
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = true,
+   DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Juju Hub | Key",
+      Subtitle = "Prenium Version",
+      Note = "Key Is Private.", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"23071806"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("📜Welcome",104365492568677) -- Title, Image
+
+local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Creator : JujuOfficiel, Helper : hb2obsk, Contributor : akamikarubidajyo"})
+
+local Paragraph = Tab:CreateParagraph({Title = "FREE User", Content = "FREE Hub have some disabled scripts to get the Prenium DM JujuOfficiel on discord"})
+
+local Paragraph = Tab:CreateParagraph({Title = "Info", Content = "Juju Hub is updated weekly you can ask directly JujuOfficiel on discord"})
+local Tab = Window:CreateTab("🎲Misc", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Mobile Aimbot",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Universal-For-Mobile-and-PC-29153"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Aimbot",
+   Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/new-gugus/aimbot-neptune/refs/heads/main/aimbot.lua", true))()
+   end,
+})
+local Tab = Window:CreateTab("🔓Prison Life",104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "PrizzLife",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+   end,
+})
+local Tab = Window:CreateTab("🎤Basically FNF",104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "OP Autoplayer (Prenium)",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Disabled",
+   Content = "This script is only in Prenium Hub",
+   Duration = 8,
+   Image = 104365492568677,
+})
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Autoplayer Lite",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Basically-FNF:-Remix-AutoPlayer-Lite-9989"))()
+   end,
+})
+local Tab = Window:CreateTab("🤺Combat Warriors",104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Infernium (Prenium)",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Disabled",
+   Content = "This script is only in Prenium Hub",
+   Duration = 8,
+   Image = 104365492568677,
+})
+   end,
+})
+local Tab = Window:CreateTab("🚪Doors", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Lolhax",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxexploiterz/Release-Lolhax/refs/heads/main/LX%20Doors%20v3.lua"))()
+   end,
+})
+local Tab = Window:CreateTab("🔪Murder VS Sherif Duels", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Lx39 (Broke The Hub)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Murder-vs-sheriff-by-Lx39-17130"))()
+   end,
+})
+local Tab = Window:CreateTab("🌅M.E.G Endless Reality", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "MegMenu (Prenium)",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Disabled",
+   Content = "This script is only in Prenium Hub",
+   Duration = 8,
+   Image = 104365492568677,
+})
+   end,
+})
+local Tab = Window:CreateTab("👵Granny", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Haps (destroy the Hub)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Granny-Haps-cheat-29970"))()
+   end,
+})
+
+local Tab = Window:CreateTab("🏐Blade Ball", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "SGC",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Avorrietz/Ghostobfuscate/refs/heads/main/SGC"))()
+   end,
+})
+local Tab = Window:CreateTab("🪖War Tycoon", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "PastesWares (Prenium)",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Disabled",
+   Content = "This script is only in Prenium Hub",
+   Duration = 8,
+   Image = 104365492568677,
+})
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Zendex",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/MANGUSTA-War-Tycoon-Zendex-32181"))()
+   end,
+})
+local Tab = Window:CreateTab("🏡Brookhaven RP", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Chaos Hub (Prenium)",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Disabled",
+   Content = "This script is only in Prenium Hub",
+   Duration = 8,
+   Image = 104365492568677,
+})
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Darkbones",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Brookhaven-30409"))()
+   end,
+})
+local Tab = Window:CreateTab("👵Granny Muliplayer", 104365492568677) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Zephyr Gab Edition",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Granny:-Gab-Edition-Retro-Zephyr-Gr4nny-G4b-Ed1tion-31372"))()
+   end,
+})
